@@ -105,6 +105,10 @@ tools:
     title: JSON to CSV
     description: Convert JSON to CSV with automatic header detection.
 
+  json-to-insert-sql:
+    title: JSON to INSERT SQL
+    description: Convert a JSON object or array of objects into SQL INSERT statements for a table.
+
   camera-recorder:
     title: Camera recorder
     description: Take a picture or record a video from your webcam or camera.
@@ -392,3 +396,26 @@ tools:
   text-to-binary:
     title: Text to ASCII binary
     description: Convert text to its ASCII binary representation and vice-versa.
+
+  china-mainland-id-card-generator:
+    title: China mainland ID test generator
+    description: Generate test-only fake China mainland ID-like numbers for UI and integration testing.
+    warning: Test-only fake data.
+    quantity: Quantity
+    gender: Gender
+    region: Region
+    minAge: Min age
+    maxAge: Max age
+    copied: Test data copied to the clipboard
+    genderOptions:
+      random: Random
+      male: Male
+      female: Female
+    columns:
+      id: Test ID
+      regionCodeForUi: Region code
+      birthday: Birthday
+      gender: Gender
+    button:
+      copy: Copy
+      refresh: Refresh

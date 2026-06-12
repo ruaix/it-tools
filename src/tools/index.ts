@@ -1,6 +1,7 @@
 import { tool as base64FileConverter } from './base64-file-converter';
 import { tool as base64StringConverter } from './base64-string-converter';
 import { tool as basicAuthGenerator } from './basic-auth-generator';
+import { tool as chinaMainlandIdCardGenerator } from './china-mainland-id-card-generator';
 import { tool as emailNormalizer } from './email-normalizer';
 
 import { tool as asciiTextDrawer } from './ascii-text-drawer';
@@ -27,6 +28,7 @@ import { tool as jsonToToml } from './json-to-toml';
 import { tool as tomlToYaml } from './toml-to-yaml';
 import { tool as tomlToJson } from './toml-to-json';
 import { tool as jsonToCsv } from './json-to-csv';
+import { tool as jsonToInsertSql } from './json-to-insert-sql';
 import { tool as cameraRecorder } from './camera-recorder';
 import { tool as listConverter } from './list-converter';
 import { tool as phoneParserAndFormatter } from './phone-parser-and-formatter';
@@ -152,6 +154,7 @@ export const toolsByCategory: ToolCategory[] = [
       jsonViewer,
       jsonMinify,
       jsonToCsv,
+      jsonToInsertSql,
       sqlPrettify,
       chmodCalculator,
       dockerRunToDockerComposeConverter,
@@ -188,7 +191,7 @@ export const toolsByCategory: ToolCategory[] = [
   },
   {
     name: 'Data',
-    components: [phoneParserAndFormatter, ibanValidatorAndParser],
+    components: [phoneParserAndFormatter, ibanValidatorAndParser, chinaMainlandIdCardGenerator],
   },
 ];
 
